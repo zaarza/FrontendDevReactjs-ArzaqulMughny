@@ -1,4 +1,4 @@
-import './Button.scss';
+import ButtonStyle from './Button.module.scss';
 
 interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     type?: 'button' | 'submit';
@@ -11,7 +11,7 @@ const Button = (props: IButtonProps) => {
 
     return (
         <button
-            className={`button button--${variant} button--${size}`}
+            className={`${ButtonStyle.button} ${ButtonStyle[`button--${variant}`]} ${ButtonStyle[`button--${size}`]}`}
             {...attributes}
             type={type}
         >

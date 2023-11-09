@@ -1,8 +1,10 @@
-import { useParams } from 'react-router-dom';
-
 const Details = () => {
-    const { id } = useParams();
-    return <h1>Details {id}</h1>;
+    return (
+        <div className='restaurant'>
+            <div className='restaurant__image'></div>
+            <div className='restaurant__info'></div>
+        </div>
+    );
 };
 
 export default Details;

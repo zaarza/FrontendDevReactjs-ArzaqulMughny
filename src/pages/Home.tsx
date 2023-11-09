@@ -1,36 +1,36 @@
-import './Home.scss';
+import HomeStyle from './Home.module.scss';
 import Restaurants from '../components/Restaurant';
 import Button from '../components/ui/Button';
 
 const Home = () => {
     return (
         <>
-            <div className='container'>
-                <div className='header'>
-                    <header className='header__inner'>
-                        <h1 className='header__title'>Restaurants</h1>
-                        <h2 className='header__subtitle'>
+            <div className={HomeStyle.container}>
+                <div className={HomeStyle.header}>
+                    <header className={HomeStyle.header__inner}>
+                        <h1 className={HomeStyle.header__title}>Restaurants</h1>
+                        <h2 className={HomeStyle.header__subtitle}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua.
                         </h2>
                     </header>
 
-                    <div className='filters'>
-                        <p className='filters__by'>Filter by:</p>
+                    <div className={HomeStyle.filters}>
+                        <p className={HomeStyle.filters__by}>Filter by:</p>
 
-                        <div className='filters__inner'>
-                            <label className='filter'>
+                        <div className={HomeStyle.filters__inner}>
+                            <label className={HomeStyle.filter}>
                                 <input type='radio' />
-                                <span className='filter__label'>Open now</span>
+                                <span className={HomeStyle.filter__label}>Open now</span>
                             </label>
 
-                            <label className='filter'>
-                                <select className='filter__select'>
+                            <label className={HomeStyle.filter}>
+                                <select className={HomeStyle.filter__select}>
                                     <option selected>Price</option>
                                 </select>
 
                                 <svg
-                                    className='filter__arrow'
+                                    className={HomeStyle.filter__arrow}
                                     xmlns='http://www.w3.org/2000/svg'
                                     viewBox='0 0 24 24'
                                 >
@@ -38,13 +38,13 @@ const Home = () => {
                                 </svg>
                             </label>
 
-                            <label className='filter'>
-                                <select className='filter__select'>
+                            <label className={HomeStyle.filter}>
+                                <select className={HomeStyle.filter__select}>
                                     <option selected>Categories</option>
                                 </select>
 
                                 <svg
-                                    className='filter__arrow'
+                                    className={HomeStyle.filter__arrow}
                                     xmlns='http://www.w3.org/2000/svg'
                                     viewBox='0 0 24 24'
                                 >
@@ -53,7 +53,7 @@ const Home = () => {
                             </label>
                         </div>
 
-                        <div className='filters__apply'>
+                        <div className={HomeStyle.filters__apply}>
                             <Button
                                 variant={'outline'}
                                 size={'fit'}

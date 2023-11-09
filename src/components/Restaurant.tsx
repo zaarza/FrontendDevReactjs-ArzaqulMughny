@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
 import { Star } from '../shared/Icons';
-import './Restaurant.scss';
+import RestaurantStyle from './Restaurant.module.scss';
 import Button from './ui/Button';
 
 export const RestaurantCard = () => {
     return (
-        <div className='restaurant'>
-            <div className='restaurant__image'></div>
-            <header className='restaurant__details'>
-                <h1 className='restaurant__name'>
+        <div className={RestaurantStyle.restaurant}>
+            <div className={RestaurantStyle.restaurant__image}></div>
+            <header className={RestaurantStyle.restaurant__details}>
+                <h1 className={RestaurantStyle.restaurant__name}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet ex consectetur officia iusto
                     culpa!
                 </h1>
             </header>
 
-            <div className='restaurant__rating'>
+            <div className={RestaurantStyle.restaurant__rating}>
                 <Star />
                 <Star />
                 <Star />
@@ -22,12 +22,12 @@ export const RestaurantCard = () => {
                 <Star />
             </div>
 
-            <div className='restaurant__info'>
-                <span className='restaurant__location'>
+            <div className={RestaurantStyle.restaurant__info}>
+                <span className={RestaurantStyle.restaurant__location}>
                     SEAFOOD <span style={{ fontSize: 6 }}>&#x25CF;</span> $$$
                 </span>
                 <span>
-                    <span className='availability availability--open' />
+                    <span className={`${RestaurantStyle.availability} ${RestaurantStyle['availability--open']}`} />
                     OPEN NOW
                 </span>
             </div>
@@ -47,7 +47,7 @@ const RestaurantList = (props: TRestaurantListProps) => {
     const { data } = props;
 
     return (
-        <ul className='restaurants__list'>
+        <ul className={RestaurantStyle.restaurants__list}>
             {data.map((restaurant, index) => (
                 <li key={`restaurant-${index}`}>
                     <RestaurantCard />
@@ -59,8 +59,8 @@ const RestaurantList = (props: TRestaurantListProps) => {
 
 const Restaurants = () => {
     return (
-        <div className='restaurants'>
-            <h1 className='restaurants__title'>All Restaurants</h1>
+        <div className={RestaurantStyle.restaurants}>
+            <h1 className={RestaurantStyle.restaurants__title}>All Restaurants</h1>
 
             <RestaurantList data={[1, 1, 1, 1, 1]} />
 
