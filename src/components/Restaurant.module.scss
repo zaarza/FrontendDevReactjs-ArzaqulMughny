@@ -2,13 +2,14 @@
     padding-inline: 3em;
     display: flex;
     flex-direction: column;
-    row-gap: 0.5em;
+    row-gap: 2em;
     padding-bottom: 2em;
 
     &__title {
         font-family: var(--font-montserrat);
         color: var(--color-text);
         font-weight: 300;
+        font-size: 2em;
     }
 
     &__list {

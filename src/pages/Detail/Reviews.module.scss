@@ -1,0 +1,52 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    position: relative;
+
+    &__title {
+        font-family: var(--font-montserrat);
+        font-size: 1.5em;
+        color: var(--color-text);
+        position: sticky;
+        top: 0;
+        background-color: white;
+        padding-bottom: 1em;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+    }
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+
+    &__title {
+        font-family: var(--font-montserrat);
+        font-size: 1.2em;
+    }
+
+    &__author {
+        font-size: 0.8em;
+        color: var(--color-text);
+        font-weight: 300;
+    }
+
+    &__published_at {
+        font-family: var(--font-montserrat);
+        color: var(--color-text-light);
+    }
+
+    &__summary {
+        font-family: var(--font-montserrat);
+        color: var(--color-text);
+        font-weight: 300;
+        line-height: 1.5em;
+        max-width: 600px;
+    }
+}
