@@ -1,6 +1,5 @@
 import HomeStyle from './Home.module.scss';
 import Restaurants from '../components/Restaurant';
-import Button from '../components/ui/Button';
 
 const Home = () => {
     return (
