@@ -7,6 +7,8 @@ type TRatingProps = {
 
 const Rating = (props: TRatingProps) => {
     const { rating } = props;
+    if (!rating) return;
+
     const splitted = rating.split('.');
 
     const result = [];

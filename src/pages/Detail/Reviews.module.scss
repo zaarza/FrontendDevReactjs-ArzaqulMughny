@@ -7,9 +7,9 @@
     &__title {
         font-family: var(--font-montserrat);
         font-size: 1.5em;
-        color: var(--color-text);
         position: sticky;
         top: 0;
+        color: var(--color-text);
         background-color: white;
         padding-bottom: 1em;
     }
@@ -29,12 +29,14 @@
     &__title {
         font-family: var(--font-montserrat);
         font-size: 1.2em;
+        line-height: 1.5em;
     }
 
     &__author {
         font-size: 0.8em;
         color: var(--color-text);
         font-weight: 300;
+        font-family: var(--font-montserrat);
     }
 
     &__published_at {
