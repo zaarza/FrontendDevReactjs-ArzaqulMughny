@@ -1,0 +1,10 @@
+.rating {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    svg {
+        width: 24px;
+        fill: var(--color-primary);
+    }
+}

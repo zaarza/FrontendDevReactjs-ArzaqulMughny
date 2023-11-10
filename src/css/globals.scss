@@ -1,0 +1,23 @@
+@import url('./reset.scss');
+
+:root {
+    --color-primary: #002b56;
+    --color-text: #313131;
+    --color-text-light: #8e8e8e;
+    --color-lime: #00eba7;
+    --color-red: #fe2b46;
+
+    --font-montserrat: 'Inter', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    max-width: 1366px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#root {
+    width: 100%;
+}
