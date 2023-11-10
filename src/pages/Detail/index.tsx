@@ -3,7 +3,6 @@ import Rating from '../../components/Rating';
 import style from './index.module.scss';
 import Reviews from './Reviews';
 import useRestaurantDetails from '../../hooks/useRestaurantDetails';
-import Button from '../../components/ui/Button';
 
 const Details = () => {
     const { id } = useParams();
